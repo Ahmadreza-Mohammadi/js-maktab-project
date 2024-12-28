@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cntnr flex flex-col gap-2 w-[428px] m-auto mt-5">
+      <div class="navbar h-[80px] flex justify-between items-center">
+        <div class="pl-[24px] w-[198px] flex gap-[16px] items-center">
+          <span
+            ><img class="rounded-full" src="./assets/logos/profile.png" alt=""
+          /></span>
+          <div class="flex flex-col gap-[10px]">
+            <span class="text-[#757475] text-[16px] font-[inter] font-[500] w-[120px] h-[19px]">Good morning👋</span>
+            <span class="font-[inter] text-[16px] font-[700] text-[#152536]">Saeed Abdilar</span>
+          </div>
+        </div>
+        <div class="pr-[24px]">
+          <div class="w-[64px] flex gap-[16px]">
+            <span><img src="./assets/logos/alert-icon.png" alt="" /></span>
+            <span><img src="./assets/logos/heart.png" alt="" /></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[380px] m-auto mb-[] px-[24px] py-[8px] bg-[#fafafa] rounded">
+        <input
+          class="w-full bg-[#fafafa]"
+          type="text"
+          name=""
+          id=""
+          placeholder="Search"
+        />
+      </div>
+
+      <div class="products w-[380px] m-auto flex flex-col gap-y-[29px]">
+        <div class="flex justify-between py-[12px] px-[8px]">
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/051f30ca9c315b1ae177ad95b1079488.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">Nike</span>
+          </div>
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/adidas.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">Adidas</span>
+          </div>
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/puma.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">Puma</span>
+          </div>
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/asics.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">Asics</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between  px-[8px]">
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/reebok.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">Reebok</span>
+          </div>
+
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/newB.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">New Ba..</span>
+          </div>
+
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/converse.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">Converse</span>
+          </div>
+
+          <div class="w-[60px] h-[91px] flex flex-col items-center gap-[13px]">
+            <div
+              class="w-[60px] h-[60px] bg-[#ececec] flex justify-center items-center rounded-full"
+            >
+              <img
+                class="w-[30px] h-[19px]"
+                src="./assets/imgs/more.png"
+                alt=""
+              />
+            </div>
+            <span class="brands">More ..</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="filters h-[24px] w-[380px] m-auto mt-[28px] flex justify-between items-center"
+      >
+        <span class="font-[inter] text-[20px] font-[600]">Most Popular</span>
+        <span class="font-[inter] text-[16px] font-[600]">See All</span>
+      </div>
+
+      <div class="filter-swiper w-full mt-[20px]">
+        <div class="ml-[24px] flex gap-[12px]">
+          <span
+            class="w-[60px] h-[39px] text-[#fff] bg-[#343a40] rounded-[25px] flex items-center justify-center font-[inter] text-[16px] font-[600] border-2 border-black"
+            >All</span
+          >
+          <span
+            class="w-[60px] h-[39px] text-[#343a40] bg-[#fff] rounded-[25px] flex items-center justify-center font-[inter] text-[16px] font-[600] border-2 border-black"
+            >Nike</span
+          >
+          <span
+            class="w-[60px] h-[39px] text-[#343a40] bg-[#fff] rounded-[25px] flex items-center justify-center font-[inter] text-[16px] font-[600] border-2 border-black"
+            >Adidas</span
+          >
+          <span
+            class="w-[60px] h-[39px] text-[#343a40] bg-[#fff] rounded-[25px] flex items-center justify-center font-[inter] text-[16px] font-[600] border-2 border-black"
+            >Puma</span
+          >
+          <span
+            class="w-[60px] h-[39px] text-[#343a40] bg-[#fff] rounded-[25px] flex items-center justify-center font-[inter] text-[16px] font-[600] border-2 border-black"
+            >Asics</span
+          >
+          <span
+            class="w-[60px] h-[39px] text-[#343a40] bg-[#fff] rounded-[25px] flex items-center justify-center font-[inter] text-[16px] font-[600] border-2 border-black"
+            >Rebok</span
+          >
+          <span
+            class="w-[60px] h-[39px] text-[#343a40] bg-[#fff] rounded-[25px] flex items-center justify-center font-[inter] text-[16px] font-[600] border-2 border-black"
+            >New Balance</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="products-items mt-[24px] w-[380px] flex m-auto flex-wrap gap-x-[16px] gap-y-[24px]"
+      >
+        <div class="w-[182px] h-[244px]">
+          <div
+            class="w-[182px] h-[182px] bg-[#f3f3f3] flex justify-center items-center rounded-[24px]"
+          >
+            <img
+              class="w-[142px] h-[142px]"
+              src="./assets/imgs/shoe.png"
+              alt=""
+            />
+          </div>
+          <div class="mt-[12px] flex flex-col gap-[8px]">
+            <span class="font-[inter] text-[20px] font-[700]"
+              >K-Swiss ista Train...</span
+            >
+            <span class="font-[inter] text-[16px] font-[600]">$85.00</span>
+          </div>
+        </div>
+
+        <div class="w-[182px] h-[244px]">
+          <div
+            class="w-[182px] h-[182px] bg-[#f3f3f3] flex justify-center items-center rounded-[24px]"
+          >
+            <img
+              class="w-[142px] h-[142px]"
+              src="./assets/imgs/shoe.png"
+              alt=""
+            />
+          </div>
+          <div class="mt-[12px] flex flex-col gap-[8px]">
+            <span class="font-[inter] text-[20px] font-[700]"
+              >K-Swiss ista Train...</span
+            >
+            <span class="font-[inter] text-[16px] font-[600]">$85.00</span>
+          </div>
+        </div>
+
+        <div class="w-[182px] h-[244px]">
+          <div
+            class="w-[182px] h-[182px] bg-[#f3f3f3] flex justify-center items-center rounded-[24px]"
+          >
+            <img
+              class="w-[142px] h-[142px]"
+              src="./assets/imgs/shoe.png"
+              alt=""
+            />
+          </div>
+          <div class="mt-[12px] flex flex-col gap-[8px]">
+            <span class="font-[inter] text-[20px] font-[700]"
+              >K-Swiss ista Train...</span
+            >
+            <span class="font-[inter] text-[16px] font-[600]">$85.00</span>
+          </div>
+        </div>
+
+        <div class="w-[182px] h-[244px]">
+          <div
+            class="w-[182px] h-[182px] bg-[#f3f3f3] flex justify-center items-center rounded-[24px]"
+          >
+            <img
+              class="w-[142px] h-[142px]"
+              src="./assets/imgs/shoe.png"
+              alt=""
+            />
+          </div>
+          <div class="mt-[12px] flex flex-col gap-[8px]">
+            <span class="font-[inter] text-[20px] font-[700]"
+              >K-Swiss ista Train...</span
+            >
+            <span class="font-[inter] text-[16px] font-[600]">$85.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="menu-bar w-[428px] h-[66px] bg-white m-auto flex justify-evenly items-center fixed bottom-0"
+      >
+        <div class="flex flex-col items-center ">
+          <img class="w-[24px] h-[24px]" src="./assets/logos/home-logo.png" alt="" />
+          <span class="text-[10px]">Home</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-[24px] h-[24px]" src="./assets/logos/cart.png" alt="" />
+          <span class="text-[10px]">Cart</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-[24px] h-[24px]" src="./assets/logos/orders.png" alt="" />
+          <span class="text-[10px]">Orders</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-[24px] h-[24px]" src="./assets/logos/wallet.png" alt="" />
+          <span class="text-[10px]">Wallet</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img class="w-[24px] h-[24px]" src="./assets/logos/profile-logo.png" alt="" />
+          <span class="text-[10px]">Profile</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
