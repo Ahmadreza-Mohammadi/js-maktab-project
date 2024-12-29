@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Login</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="content">
-        
+      <div class="top-bar w-[428px] h-[56px] m-auto flex items-center">
+        <span
+          ><img
+            src="./assets/logos/back-arrow.png"
+            alt=""
+            class="w-[32px] h-[32px] ml-[24px]"
+        /></span>
+      </div>
 
+      <div
+        class="logo w-[428px] h-[275px] flex justify-center items-center m-auto"
+      >
+        <img
+          class="w-[54px] h-[81px]"
+          src="./assets/logos/login-logo.png"
+          alt="login-logo"
+        />
+      </div>
+
+      <div
+        class="text-3xl font-semibold w-[428px] font-[inter] flex justify-center m-auto"
+      >
+        <span>Login to Your Account</span>
+      </div>
+
+      <div class="w-[428px] mt-12 m-auto">
+        <div class="w-full flex flex-col items-center gap-5">
+          <div
+            class="w-4/5 px-2 flex justify-center items-center bg-[#fafafa] rounded-md gap-1"
+          >
+            <img
+              class="w-3.5 h-3.5"
+              src="./assets/logos/email-logo.png"
+              alt=""
+            />
+
+            <input
+              class="w-full py-2 rounded-md bg-[#fafafa] text-sm"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+
+          <div
+            class="w-4/5 px-2 flex justify-center items-center bg-[#fafafa] rounded-md gap-1"
+          >
+            <img
+              class="w-3.5 h-3.5"
+              src="./assets/logos/password-logo.png"
+              alt=""
+            />
+
+            <input
+              class="w-full py-2 rounded-md bg-[#fafafa] text-sm"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
+        </div>
+        <div class="w-full  flex gap-2 justify-center items-center mt-10">
+          <input type="checkbox" name="" id="" />
+          <span>Remember me</span>
+        </div>
+
+        <div class="flex justify-center mt-64 mb-2">
+          <div class="w-96 h-12 bg-[#6e7174] flex justify-center rounded-full">
+            <button class="text-white">Sign in</button>
+
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
