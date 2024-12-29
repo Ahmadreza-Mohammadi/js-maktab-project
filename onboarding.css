@@ -1,0 +1,16 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: inline-block;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+}
