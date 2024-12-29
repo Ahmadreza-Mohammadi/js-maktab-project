@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Cart</title>
-</head>
-<body>
-    <div class="contaiiner ">
-        <div>
-            <div>
-                <span><img src="./assets/logos/login-logo.png" alt=""></span>
-                <span></span>
-            </div>
-
-            <div>
-
-            </div>
+  </head>
+  <body>
+    <div class="contaiiner w-[428px] m-auto py-10">
+      <!-- search bar -->
+      <div class="flex justify-between p-2 bg-red-300">
+        <div class="flex gap-4 items-center">
+          <span>
+            <img class="h-7 w-5" src="./assets/logos/login-logo.png" alt="" />
+          </span>
+          <span class="text-2xl font-bold">My cart</span>
         </div>
-    </div>  
-</body>
+        <div>
+          <img src="./assets/logos/manifying-glass.png" alt="" />
+        </div>
+      </div>
+
+      <!-- cart products -->
+      <div class="bg-blue-400">
+        <div class="flex justify-between items-center p-5">
+          <div class="bg-[#f3f3f3] rounded-3xl">
+            <img class="w-[142px] h-[142px]" src="./assets/imgs/shoe.png" alt="" />
+          </div>
+          <div>
+            <span>Air Jordan Retro</span>
+            <span>da</span>
+            <span>aaa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

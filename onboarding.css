@@ -14,3 +14,12 @@
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
 }
+
+.contaiiner {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/svgs/WallpaperDog-20534610%201.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
