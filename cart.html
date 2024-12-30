@@ -7,9 +7,9 @@
     <title>Cart</title>
   </head>
   <body>
-    <div class="contaiiner w-[428px] m-auto py-10">
+    <div class="contaiiner w-[428px] m-auto py-10 px-4">
       <!-- search bar -->
-      <div class="flex justify-between p-2 bg-red-300">
+      <div class="flex justify-between p-2">
         <div class="flex gap-4 items-center">
           <span>
             <img class="h-7 w-5" src="./assets/logos/login-logo.png" alt="" />
@@ -22,15 +22,120 @@
       </div>
 
       <!-- cart products -->
-      <div class="bg-blue-400">
-        <div class="flex justify-between items-center p-5">
+      <div class="bg-[#fafafa] flex flex-col gap-10 mt-10">
+        <!-- cart -->
+        <div class="bg-blue-500 rounded-3xl p-5 flex gap-4 items-center">
           <div class="bg-[#f3f3f3] rounded-3xl">
-            <img class="w-[142px] h-[142px]" src="./assets/imgs/shoe.png" alt="" />
+            <img
+              class="w-[142px] h-[142px]"
+              src="./assets/imgs/shoe.png"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-5">
+            <div class="bg-green-400 w-56 flex justify-between">
+              <span class="text-xl font-bold font-[inter]"
+                >Air Jordan Retro</span
+              >
+              <span class="flex items-center"
+                ><img class="h-5" src="./assets/svgs/recycle.svg" alt=""
+              /></span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="bg-black w-5 h-5 rounded-full"></div>
+              <span class="text-[#7b7a78]">Black</span>|<span
+                class="text-[#7b7a78]"
+              >
+                Size = 42</span
+              >
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-bold text-xl font-[inter]">$105.00</span>
+              <div
+                class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between"
+              >
+                <span class="p-1">-</span>
+                <span class="p-1">1</span>
+                <span class="p-1">+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cart -->
+        <div class="bg-blue-500 rounded-3xl p-5 flex gap-4 items-center">
+          <div class="bg-[#f3f3f3] rounded-3xl">
+            <img
+              class="w-[142px] h-[142px]"
+              src="./assets/imgs/shoe.png"
+              alt=""
+            />
           </div>
           <div>
-            <span>Air Jordan Retro</span>
+            <div class="bg-green-400 w-56 flex justify-between">
+              <span class="text-xl font-bold">Air Jordan Retro</span>
+              <span class="flex items-center"
+                ><img class="h-5" src="./assets/svgs/recycle.svg" alt=""
+              /></span>
+            </div>
             <span>da</span>
             <span>aaa</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu bar -->
+      <div>
+        <!-- checkout -->
+        <div>
+          <div class="flex flex-col bg-red-500">
+            <span>Total price</span>
+            <span>$400</span>
+          </div>
+        </div>
+
+        <div
+          class="menu-bar w-[428px] h-[66px] bg-white m-auto flex justify-evenly items-center fixed bottom-0"
+        >
+          <div class="flex flex-col items-center">
+            <img
+              class="w-[24px] h-[24px]"
+              src="./assets/logos/home-logo.png"
+              alt=""
+            />
+            <span class="text-[10px]">Home</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              class="w-[24px] h-[24px]"
+              src="./assets/logos/cart.png"
+              alt=""
+            />
+            <span class="text-[10px]">Cart</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              class="w-[24px] h-[24px]"
+              src="./assets/logos/orders.png"
+              alt=""
+            />
+            <span class="text-[10px]">Orders</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              class="w-[24px] h-[24px]"
+              src="./assets/logos/wallet.png"
+              alt=""
+            />
+            <span class="text-[10px]">Wallet</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              class="w-[24px] h-[24px]"
+              src="./assets/logos/profile-logo.png"
+              alt=""
+            />
+            <span class="text-[10px]">Profile</span>
           </div>
         </div>
       </div>
