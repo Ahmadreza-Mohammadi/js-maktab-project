@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Checkout</title>
-</head>
-<body>
-    sss
-</body>
+  </head>
+  <body>
+    <!-- container  -->
+    <div class="class=w-[428px] m-auto bg-[#f9f9fa]">
+      <!-- nav  -->
+      <div class="flex gap-5 ml-4 px-5 pt-5 items-center">
+        <img
+          class="h-6"
+          src="../assets/svgs/left-arrow-svgrepo-com.svg"
+          alt=""
+        />
+        <span class="font-[inter] font-bold text-2xl">Choose Shipping</span>
+      </div>
+
+      <!-- shipping style -->
+      <div class="py-8 flex flex-col gap-5 items-center">
+        <!-- economy -->
+        <div
+          class="bg-white rounded-2xl p-4 flex gap-10 justify-center items-center w-5/6"
+        >
+          <div class="bg-black p-2 rounded-full">
+            <img
+              class="h-6 p-1"
+              src="../assets/svgs/shipping-starr.svg"
+              alt="location img"
+            />
+          </div>
+          <div class="flex items-center gap-10">
+            <div class="flex flex-col gap-1">
+              <span class="font-semibold font-[inter]">Economy</span>
+              <span class="text-[#9c9b9a] text-xs font-[inter]"
+                >Estimated Arrival, Dec 20-23</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <span class="font-[inter] font-bold">$10</span>
+              <input type="radio" name="" id="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- regular -->
+        <div
+          class="bg-white rounded-2xl p-4 flex gap-10 justify-center items-center w-5/6"
+        >
+          <div class="bg-black p-2 rounded-full">
+            <img
+              class="h-6 p-1"
+              src="../assets/svgs/regular shipping.svg"
+              alt="location img"
+            />
+          </div>
+          <div class="flex items-center gap-10">
+            <div class="flex flex-col gap-1">
+              <span class="font-semibold font-[inter]">Regular</span>
+              <span class="text-[#9c9b9a] text-xs font-[inter]"
+                >Estimated Arrival, Dec 20-23</span
+              >
+            </div>
+            <div class="flex gap-2">
+              <span class="font-[inter] font-bold">$10</span>
+              <input type="radio" name="" id="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- cargo -->
+        <div
+        class="bg-white rounded-2xl p-4 flex gap-10 justify-center items-center w-5/6"
+      >
+        <div class="bg-black p-2 rounded-full">
+          <img
+            class="h-6 p-1"
+            src="../assets/svgs/shipping cargoo.svg"
+            alt="location img"
+          />
+        </div>
+        <div class="flex items-center gap-10">
+          <div class="flex flex-col gap-1">
+            <span class="font-semibold font-[inter]">Cargo</span>
+            <span class="text-[#9c9b9a] text-xs font-[inter]"
+              >Estimated Arrival, Dec 20-23</span
+            >
+          </div>
+          <div class="flex gap-2">
+            <span class="font-[inter] font-bold">$10</span>
+            <input type="radio" name="" id="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- express -->
+      <div
+      class="bg-white rounded-2xl p-4 flex gap-10 justify-center items-center w-5/6"
+    >
+      <div class="bg-black p-2 rounded-full">
+        <img
+          class="h-6 p-1"
+          src="../assets/svgs/shipping-fast-svgrepo-com.svg"
+          alt="location img"
+        />
+      </div>
+      <div class="flex items-center gap-10">
+        <div class="flex flex-col gap-1">
+          <span class="font-semibold font-[inter]">Express</span>
+          <span class="text-[#9c9b9a] text-xs font-[inter]"
+            >Estimated Arrival, Dec 20-23</span
+          >
+        </div>
+        <div class="flex gap-2">
+          <span class="font-[inter] font-bold">$10</span>
+          <input type="radio" name="" id="" />
+        </div>
+      </div>
+    </div>   
+      </div>
+
+        <!-- apply button  -->
+        <div class="bg-white flex justify-center py-6 rounded-t-3xl">
+          <button
+            class="text-white text-lg font-semibold bg-black w-5/6 h-14 rounded-[28px] flex justify-center items-center gap-3"
+          >
+            Apply
+          </button>
+        </div>
+    </div>
+  </body>
 </html>

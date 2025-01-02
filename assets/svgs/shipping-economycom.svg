@@ -1,0 +1,13 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 24 24" id="shipping" xmlns="http://www.w3.org/2000/svg" class="icon multi-color" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<title style="stroke-width: 2;">shipping</title>
+<path id="tertiary-fill" d="M8,17H3V5H8Zm13,0a1,1,0,0,0,1-1V12L20.28,8.55a1,1,0,0,0-.9-.55H17v9Z" style="fill: #ffffff; stroke-width: 2;"/>
+<path id="primary-stroke" d="M16,17V8h2.38a1,1,0,0,1,.9.55L21,12v4a1,1,0,0,1-1,1ZM15,5H4A1,1,0,0,0,3,6V16a1,1,0,0,0,1,1H6a2,2,0,0,1,4,0h4a2,2,0,0,1,2-2V6A1,1,0,0,0,15,5Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+<path id="secondary-fill" d="M10,17a2,2,0,1,1-2-2A2,2,0,0,1,10,17Zm6-2a2,2,0,1,0,2,2A2,2,0,0,0,16,15Z" style="fill: #ffffff; stroke-width: 2;"/>
+<path id="primary-stroke-2" data-name="primary-stroke" d="M10,17a2,2,0,1,1-2-2A2,2,0,0,1,10,17Zm6-2a2,2,0,1,0,2,2A2,2,0,0,0,16,15Z" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/>
+</g>
+</svg>
