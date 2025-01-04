@@ -8,22 +8,128 @@
   </head>
   <body>
     <!-- container -->
-    <div class="w-[428px] m-auto">
-        <!-- top bar -->
-        <div>
-            <div class="flex justify-between p-2 mt-10">
-                <div class="flex gap-4 items-center">
-                  <span>
-                    <img class="h-7 w-5" src="../assets/logos/login-logo.png" alt="" />
-                  </span>
-                  <span class="text-2xl font-bold">My Orders</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <img src="./assets/logos/manifying-glass.png" alt="" />
-                  <img class=" h-8" src="./assets/svgs/more-horizontal-svgrepo-com.svg" alt="" />
-                </div>
-              </div>
+    <div class="w-[428px] m-auto bg-[#fbfbfb] font-[inter]">
+      <!-- top bar -->
+      <div>
+        <div class="flex justify-between p-2 mt-10">
+          <div class="flex gap-4 items-center">
+            <span>
+              <img
+                class="h-7 w-5"
+                src="../assets/logos/login-logo.png"
+                alt=""
+              />
+            </span>
+            <span class="text-2xl font-bold">My Orders</span>
+          </div>
+          <div class="flex items-center gap-5">
+            <img
+              class="h-10"
+              src="../assets/svgs/search-svgrepo-com.svg"
+              alt=""
+            />
+            <img
+              class="border-2 border-black rounded-full h-8"
+              src="../assets/svgs/more-horizontal-svgrepo-com.svg"
+              alt=""
+            />
+          </div>
         </div>
+      </div>
+
+      <!-- active and completed section -->
+      <div class="py-2 px-5 flex justify-between">
+        <div class="w-1/2 text-center py-2 border-b-4 border-black">Active</div>
+        <div
+          class="w-1/2 text-center py-2 border-b-2 border-gray-400 text-[#a09fa1]"
+        >
+          Completed
+        </div>
+      </div>
+
+      <!-- nothing in active or completed -->
+      <!-- <div class="h-screen flex flex-col gap-2 justify-center items-center">
+        <span
+          ><img class="h-64" src="../assets/imgs/not found search.png" alt=""
+        /></span>
+        <span class="font-semibold text-xl">You don't have an order yet</span>
+        <span>You don't have active orders at this time</span>
+      </div> -->
+
+      <!-- show products in orders -->
+      <!-- products container -->
+      <div class="p-2 flex flex-col items-center">
+        <!-- product  -->
+        <div class=" w-5/6 flex gap-3 bg-white p-4 rounded-3xl">
+          <div class="bg-[#f3f3f3]  rounded-3xl flex justify-center items-center px-1">
+            <img  src="../assets/imgs/shoe.png" alt="" />
+          </div>
+          <div class="w-52 flex flex-col gap-1">
+            <span >Air Jordan 3 Retro</span>
+            <div class="flex gap-2 p-1 items-center">
+              <span class="h-5 w-5 bg-black rounded-full"></span>
+              <span class="text-xs text-[#a09fa1]">Black</span>
+              <span>l</span>
+              <span class="text-xs text-[#a09fa1]">Size=42</span>
+              <span>l</span>
+              <span class="text-xs text-[#a09fa1]">Qty=1</span>
+            </div>
+            <span>In Delivery</span>
+            <div class="flex justify-between items-center px-1">
+              <span class="font-semibold">$105.00</span>
+              <button class="bg-black p-1 w-24 rounded-3xl text-white ">Track Order</button>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <!-- fixed menu -->
+      <div
+        class="menu-bar w-[428px] h-[66px] bg-white m-auto flex justify-evenly items-center fixed bottom-0"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/home-logo.png"
+            alt=""
+          />
+          <span class="text-[10px]">Home</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/cart.png"
+            alt=""
+          />
+          <span class="text-[10px]">Cart</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/orders.png"
+            alt=""
+          />
+          <span class="text-[10px]">Orders</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/wallet.png"
+            alt=""
+          />
+          <span class="text-[10px]">Wallet</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/profile-logo.png"
+            alt=""
+          />
+          <span class="text-[10px]">Profile</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>

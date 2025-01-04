@@ -45,6 +45,7 @@
             />
 
             <input
+              id="email-input"
               class="w-full py-2 rounded-md bg-[#fafafa] text-sm"
               type="email"
               placeholder="Email"
@@ -61,24 +62,27 @@
             />
 
             <input
+              id="password-input"
               class="w-full py-2 rounded-md bg-[#fafafa] text-sm"
               type="password"
               placeholder="Password"
             />
           </div>
+          <span id="incorrect-error" class="text-red-500 font-semibold hidden font-[inter]">Email or password is incorrect!</span>
         </div>
-        <div class="w-full  flex gap-2 justify-center items-center mt-10">
+        <div class="w-full flex gap-2 justify-center items-center mt-10">
           <input type="checkbox" name="" id="" />
           <span>Remember me</span>
         </div>
 
         <div class="flex justify-center mt-64 mb-2">
           <div class="w-96 h-12 bg-[#6e7174] flex justify-center rounded-full">
-            <button class="text-white">Sign in</button>
-
+            <button onclick="loginHandler()" class="text-white">Sign in</button>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="./login.js"></script>
   </body>
 </html>
