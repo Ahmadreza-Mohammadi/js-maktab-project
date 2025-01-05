@@ -1,6 +1,7 @@
 const emailInput = document.getElementById("email-input");
 const passwordInput = document.getElementById("password-input");
 const incorrectAlert = document.getElementById("incorrect-error");
+const signInParentBtn = document.getElementById("sign-in-btn");
 
 const BASE_URL = "http://api.alikooshesh.ir:3000";
 const API_KEY =
@@ -37,3 +38,17 @@ function loginHandler() {
       }, 2000);
     });
 }
+
+
+
+function updateButtonState() {
+  if (emailInput.value === "" && passwordInput.value === "") {
+    signInParentBtn.style.backgroundColor = "#6e7174";
+  } else {
+    signInParentBtn.style.backgroundColor = "black";
+  }
+}
+
+emailInput.addEventListener("input", updateButtonState);
+passwordInput.addEventListener("input", updateButtonState);
+
