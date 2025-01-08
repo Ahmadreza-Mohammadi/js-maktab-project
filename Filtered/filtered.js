@@ -2,16 +2,18 @@ const BASE_URL = "http://api.alikooshesh.ir:3000";
 const API_KEY =
   "ahmadreza-mohammadiDf4FntTt7eDYpjB1y6JrubLGirgncMnWPauJW8NTAyK7FvVX46U3oFl1eQUJCxKcs1KnEsp2nYuX90qx3G2DgUxXBkBSIqbu1gqNVGpKjB3DH";
 const ACCESS_TOKEN =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjIzOTkxNiwiZXhwIjoxNzM2NDEyNzE2fQ.WyZSYBtufgzmJqlRTIgBl0dRLm9GR2Qwt7pBsMS83EM";
-
-// import { ACCESS_TOKEN, API_KEY, BASE_URL } from "../Api/user-validation";
-
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjMxNzE3OSwiZXhwIjoxNzM2NDg5OTc5fQ.diochWTWo5pOCjvn0Exirouka-2VXh5bopw041_oXsE"
 
 const brandHeader = document.getElementById("brand-name");
 const params = new URLSearchParams(window.location.search);
 const brandName = params.get("brand");
+console.log(brandName);
 
 const filteredProductsSection = document.getElementById("filtered-section");
+
+const backToHomeHandler = () => {
+  window.location.href = "../Home/home.html"
+};
 
  async function getFilteredBrands(brandName) {
   const res = await fetch(
@@ -30,8 +32,8 @@ const filteredProductsSection = document.getElementById("filtered-section");
   return filteredProducts;
 }
 
- async function renderFilteredProducts(brand) {
-  const filtered = await getFilteredBrands(brand);
+ async function renderFilteredProducts(brandName) {
+  const filtered = await getFilteredBrands(brandName);
   brandHeader.innerHTML = brandName
   filteredProductsSection.innerHTML = "";
   filtered.map((product) => {
