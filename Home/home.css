@@ -7,7 +7,7 @@
   letter-spacing: -0.7px;
 }
 
-#test {
+#text-wrapper {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
