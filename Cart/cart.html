@@ -8,8 +8,9 @@
   </head>
   <body>
     <!-- container -->
-    <div class=" max-w-[428px] m-auto py-10  bg-[#fafafa]">      <!-- search bar -->
-      <div class="flex justify-between p-2 ">
+    <div class="max-w-[428px] m-auto py-10 bg-[#fafafa]">
+      <!-- search bar -->
+      <div class="flex justify-between p-2">
         <div class="flex gap-4 items-center">
           <span>
             <img class="h-7 w-5" src="./assets/logos/login-logo.png" alt="" />
@@ -22,15 +23,24 @@
       </div>
 
       <!-- cart products -->
-      <div class="bg-[#fafafa] flex flex-col gap-10 mt-10 w-[428px] justify-center">
+      <div
+        id="cart-products-container"
+        class="bg-[#fafafa] flex flex-col gap-10 mt-10 w-[428px] justify-center"
+      >
         <!-- cart -->
-        <div class=" rounded-3xl p-5 flex gap-4 items-center ">
+        <!-- <div class="rounded-3xl p-5 flex gap-4 items-center">
           <div class="bg-[#f3f3f3] rounded-3xl">
-            <img class="w-[142px] h-[142px]" src="../assets/imgs/shoe.png" alt="" />
+            <img
+              class="w-[142px] h-[142px]"
+              src="../assets/imgs/shoe.png"
+              alt=""
+            />
           </div>
           <div class="flex flex-col gap-5">
-            <div class=" w-56 flex justify-between">
-              <span class="text-xl font-bold font-[inter]">Air Jordan Retro</span>
+            <div class="w-56 flex justify-between">
+              <span class="text-xl font-bold font-[inter]"
+                >Air Jordan Retro</span
+              >
               <span class="flex items-center">
                 <img class="h-5" src="../assets/svgs/recycle.svg" alt="" />
               </span>
@@ -42,23 +52,31 @@
             </div>
             <div class="flex justify-between items-center">
               <span class="font-bold text-xl font-[inter]">$105.00</span>
-              <div class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between">
+              <div
+                class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between"
+              >
                 <span class="p-1">-</span>
                 <span class="p-1">1</span>
                 <span class="p-1">+</span>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- cart -->
-        <div class=" rounded-3xl p-5 flex gap-4 items-center">
+        <!-- <div class="rounded-3xl p-5 flex gap-4 items-center">
           <div class="bg-[#f3f3f3] rounded-3xl">
-            <img class="w-[142px] h-[142px]" src="../assets/imgs/shoe.png" alt="" />
+            <img
+              class="w-[142px] h-[142px]"
+              src="../assets/imgs/shoe.png"
+              alt=""
+            />
           </div>
           <div class="flex flex-col gap-5">
-            <div class=" w-56 flex justify-between">
-              <span class="text-xl font-bold font-[inter]">Air Jordan Retro</span>
+            <div class="w-56 flex justify-between">
+              <span class="text-xl font-bold font-[inter]"
+                >Air Jordan Retro</span
+              >
               <span class="flex items-center">
                 <img class="h-5" src="../assets/svgs/recycle.svg" alt="" />
               </span>
@@ -70,27 +88,29 @@
             </div>
             <div class="flex justify-between items-center">
               <span class="font-bold text-xl font-[inter]">$105.00</span>
-              <div class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between">
+              <div
+                class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between"
+              >
                 <span class="p-1">-</span>
                 <span class="p-1">1</span>
                 <span class="p-1">+</span>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- menu bar -->
       <div class="fixed bottom-16 bg-white rounded-t-3xl">
         <div class="flex w-[428px] flex gap-20">
-          <div class="h-24 ">
+          <div class="h-24">
             <div class="h-full p-3 flex flex-col justify-center">
               <span class="text-[#969491]">Total price</span>
               <span class="font-bold">$585.00</span>
             </div>
           </div>
 
-          <div class="text-white flex items-center w-60 justify-center ">
+          <div class="text-white flex items-center w-60 justify-center">
             <div class="bg-black rounded-3xl w-56 flex justify-center">
               <span class="flex items-center gap-5">
                 <button class="bg-black h-12">Checkout</button>
@@ -102,28 +122,52 @@
       </div>
 
       <!-- fixed menu -->
-      <div class="menu-bar w-[428px] h-[66px] bg-white m-auto flex justify-evenly items-center fixed bottom-0">
+      <div
+        class="menu-bar w-[428px] h-[66px] bg-white m-auto flex justify-evenly items-center fixed bottom-0"
+      >
         <div class="flex flex-col items-center">
-          <img class="w-[24px] h-[24px]" src="../assets/logos/home-logo.png" alt="" />
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/home-logo.png"
+            alt=""
+          />
           <span class="text-[10px]">Home</span>
         </div>
         <div class="flex flex-col items-center">
-          <img class="w-[24px] h-[24px]" src="../assets/logos/cart.png" alt="" />
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/cart.png"
+            alt=""
+          />
           <span class="text-[10px]">Cart</span>
         </div>
         <div class="flex flex-col items-center">
-          <img class="w-[24px] h-[24px]" src="../assets/logos/orders.png" alt="" />
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/orders.png"
+            alt=""
+          />
           <span class="text-[10px]">Orders</span>
         </div>
         <div class="flex flex-col items-center">
-          <img class="w-[24px] h-[24px]" src="../assets/logos/wallet.png" alt="" />
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/wallet.png"
+            alt=""
+          />
           <span class="text-[10px]">Wallet</span>
         </div>
         <div class="flex flex-col items-center">
-          <img class="w-[24px] h-[24px]" src="../assets/logos/profile-logo.png" alt="" />
+          <img
+            class="w-[24px] h-[24px]"
+            src="../assets/logos/profile-logo.png"
+            alt=""
+          />
           <span class="text-[10px]">Profile</span>
         </div>
       </div>
     </div>
+
+    <script src="./cart.js"></script>
   </body>
 </html>

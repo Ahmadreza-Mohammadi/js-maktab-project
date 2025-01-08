@@ -1,4 +1,3 @@
-
 const productsList = document.getElementById("products-list");
 const brandsContainer = document.getElementById("brands-container");
 const brands = [
@@ -35,12 +34,11 @@ const brands = [
     imageURL: "../assets/imgs/more.png",
   },
 ];
- const BASE_URL = "http://api.alikooshesh.ir:3000";
- const API_KEY =
+const BASE_URL = "http://api.alikooshesh.ir:3000";
+const API_KEY =
   "ahmadreza-mohammadiDf4FntTt7eDYpjB1y6JrubLGirgncMnWPauJW8NTAyK7FvVX46U3oFl1eQUJCxKcs1KnEsp2nYuX90qx3G2DgUxXBkBSIqbu1gqNVGpKjB3DH";
- const ACCESS_TOKEN =
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjMxNzE3OSwiZXhwIjoxNzM2NDg5OTc5fQ.diochWTWo5pOCjvn0Exirouka-2VXh5bopw041_oXsE"
-
+const ACCESS_TOKEN =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjMxNzE3OSwiZXhwIjoxNzM2NDg5OTc5fQ.diochWTWo5pOCjvn0Exirouka-2VXh5bopw041_oXsE";
 
 function renderHomeBrands() {
   brands.forEach((brand) => {
@@ -86,11 +84,10 @@ async function getHomeProducts() {
     // console.log(productsArray);
 
     productsArray.forEach((product) => {
-      console.log(product);
       productsList.innerHTML += `
-          <a href="../Single-product/single-product.html?${product}" class="w-[182px] h-[244px]">
+          <a href="../Single-product/single-product.html?id=${product.id}" class="w-[182px] h-[244px]">
           <div
-            class="w-[182px] h-[182px] bg-[#f3f3f3] flex justify-center items-center rounded-[24px]"
+            class="w-[182px] h-[182px] bg-[#f6f6f6] flex justify-center items-center rounded-[24px]"
           >
             <img
               class="w-[142px] h-[142px]"
@@ -114,9 +111,5 @@ async function getHomeProducts() {
   }
 }
 
-   getHomeProducts();
-  //  getFilteredBrands("ASICS");
-   renderHomeBrands();
-
-
-
+getHomeProducts();
+renderHomeBrands();

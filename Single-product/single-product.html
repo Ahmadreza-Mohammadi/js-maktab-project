@@ -10,28 +10,25 @@
     <!-- container -->
     <div class="class=w-[428px] m-auto bg-[#f3f3f3]">
       <!-- nav -->
-      <div class="ml-4 px-5 pt-5 items-center bg-[#f3f3f3] ">
-        <img
-        
-          class="h-6"
-          src="../assets/svgs/left-arrow-svgrepo-com.svg"
-          alt=""
-        />
+      <div class="ml-4 px-5 pt-5 items-center bg-[#f3f3f3]">
+        <a href="../Home/home.html">
+          <img
+            class="h-6"
+            src="../assets/svgs/left-arrow-svgrepo-com.svg"
+            alt=""
+          />
+        </a>
       </div>
 
       <!-- product -->
       <div id="single-product">
         <!-- top side -->
-        <div class="w-full flex justify-center py-5">
-          <img src="../assets/imgs/red and white shoe.png" alt="" />
-        </div>
+        <div id="product-image" class="w-full flex justify-center py-5 bg-[#ebeeef]"></div>
 
         <!-- bottom side -->
         <div class="bg-white">
           <div class="px-5 py-2 flex justify-between items-center">
-            <span class="font-semibold font-[inter] text-3xl"
-              >Running Sportwear</span
-            >
+            <span id="product-name" class="font-semibold font-[inter] text-3xl"></span>
             <span><img src="../assets/logos/heart.png" alt="" /></span>
           </div>
           <div class="py-2 px-5 flex gap-2 items-center text-xs">
@@ -54,44 +51,19 @@
           </div>
           <div class="px-5 flex gap-32 mt-3">
             <!-- size -->
-            <div class="flex flex-col gap-2 justify-center">
+            <div class="flex flex-col gap-2">
               <div class="font-semibold font-[inter]">Size</div>
-              <div class="flex gap-3">
-                <div
-                  class="p-1 w-8 h-8 border-2 border-black rounded-full text-[#6b6b6c] flex justify-center items-center"
-                >
-                  40
-                </div>
-                <div
-                  class="p-1 w-8 h-8 border-2 border-black rounded-full text-[#6b6b6c] flex justify-center items-center"
-                >
-                  41
-                </div>
-                <div
-                  class="p-1 w-8 h-8 border-2 border-black rounded-full text-[#6b6b6c] flex justify-center items-center"
-                >
-                  42
-                </div>
-              </div>
+              <!-- sizes box -->
+              <div id="sizes-box" class="flex gap-3"></div>
             </div>
             <!-- colors -->
             <div class="flex flex-col gap-2 justify-center">
               <div class="font-semibold font-[inter]">Color</div>
-              <div class="flex gap-3">
-                <div
-                  class="p-1 w-8 h-8 rounded-full text-[#6b6b6c] flex justify-center items-center bg-red-600"
-                ></div>
-                <div
-                  class="p-1 w-8 h-8 rounded-full text-[#6b6b6c] flex justify-center items-center bg-purple-500"
-                ></div>
-                <div
-                  class="p-1 w-8 h-8 rounded-full text-[#6b6b6c] flex justify-center items-center bg-blue-700"
-                ></div>
-                <div
-                  class="p-1 w-8 h-8 rounded-full text-[#6b6b6c] flex justify-center items-center bg-gray-400"
-                ></div>
-              </div>
+
+              <!-- colors container -->
+              <div class="flex gap-2 w-[140px] overflow-x-auto" id="colors-box"></div>
             </div>
+            
           </div>
           <div
             class="px-5 py-4 font-[inter] font-semibold flex items-center gap-5"
@@ -100,18 +72,24 @@
             <div
               class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between items-center"
             >
-              <span class="px-2">-</span>
-              <span class="p-1">1</span>
-              <span class="px-2">+</span>
+              <span id="minus-btn" class="px-2">-</span>
+              <span id="product-count" class="p-1">0</span>
+              <span id="plus-btn" class="px-2">+</span>
             </div>
           </div>
+
+          <!-- warning of empty field -->
+           <div id="warning-text" class="py-1 font-semibold font-[inter] text-red-500 flex justify-center hidden">
+            <span>Please enter Size, Color and Quantity!</span>
+           </div>
+          
           <div class="flex justify-center">
             <div class="w-[390px] border-t py-2 mt-1"></div>
           </div>
           <div class="px-5 flex gap-10 py-4">
             <div>
               <span>Total Price</span>
-              <span class="font-[inter] font-semibold">$240.00</span>
+              <span id="price-bar" class="font-[inter] font-semibold"></span>
             </div>
             <div
               class="bg-black text-white w-full py-2 flex justify-center items-center rounded-3xl gap-4"
@@ -119,11 +97,13 @@
               <span
                 ><img class="h-4" src="../assets/svgs/lock.svg" alt=""
               /></span>
-              <button class="font-[inter] font-bold">Add to Cart</button>
+              <button id="add-to-cart-btn" class="font-[inter] font-bold">Add to Cart</button>
             </div>
           </div>
         </div>
       </div>
+
+     
     </div>
 
     <script src="./single-product.js"></script>

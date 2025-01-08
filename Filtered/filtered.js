@@ -2,7 +2,7 @@ const BASE_URL = "http://api.alikooshesh.ir:3000";
 const API_KEY =
   "ahmadreza-mohammadiDf4FntTt7eDYpjB1y6JrubLGirgncMnWPauJW8NTAyK7FvVX46U3oFl1eQUJCxKcs1KnEsp2nYuX90qx3G2DgUxXBkBSIqbu1gqNVGpKjB3DH";
 const ACCESS_TOKEN =
-"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjMxNzE3OSwiZXhwIjoxNzM2NDg5OTc5fQ.diochWTWo5pOCjvn0Exirouka-2VXh5bopw041_oXsE"
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjMxNzE3OSwiZXhwIjoxNzM2NDg5OTc5fQ.diochWTWo5pOCjvn0Exirouka-2VXh5bopw041_oXsE";
 
 const brandHeader = document.getElementById("brand-name");
 const params = new URLSearchParams(window.location.search);
@@ -12,10 +12,10 @@ console.log(brandName);
 const filteredProductsSection = document.getElementById("filtered-section");
 
 const backToHomeHandler = () => {
-  window.location.href = "../Home/home.html"
+  window.location.href = "../Home/home.html";
 };
 
- async function getFilteredBrands(brandName) {
+async function getFilteredBrands(brandName) {
   const res = await fetch(
     `${BASE_URL}/api/records/products${
       brandName !== "ALL" ? `?filterKey=brand&filterValue=${brandName}` : ""
@@ -32,9 +32,9 @@ const backToHomeHandler = () => {
   return filteredProducts;
 }
 
- async function renderFilteredProducts(brandName) {
+async function renderFilteredProducts(brandName) {
   const filtered = await getFilteredBrands(brandName);
-  brandHeader.innerHTML = brandName
+  brandHeader.innerHTML = brandName;
   filteredProductsSection.innerHTML = "";
   filtered.map((product) => {
     filteredProductsSection.innerHTML += `
@@ -50,7 +50,7 @@ const backToHomeHandler = () => {
             />
           </div>
           <div class="mt-[12px] flex flex-col gap-[8px]">
-            <span class="font-[inter] text-[20px] font-[700]"
+            <span class="font-[inter] text-[20px] font-[700] whitespace-nowrap overflow-hidden"
               >${product.name}</span
             >
             <span class="font-[inter] text-[16px] font-[600]">$${product.price}.00</span>
