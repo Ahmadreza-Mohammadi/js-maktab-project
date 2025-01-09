@@ -6,9 +6,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Product</title>
   </head>
-  <body>
+  <body class="bg-[#fafafa] font-[inter]">
     <!-- container -->
-    <div class="class=w-[428px] m-auto bg-[#f3f3f3]">
+    <div class="max-w-[428px] m-auto bg-[#f3f3f3]  rounded-lg shadow-md">
       <!-- nav -->
       <div class="ml-4 px-5 pt-5 items-center bg-[#f3f3f3]">
         <a href="../Home/home.html">
@@ -21,57 +21,48 @@
       </div>
 
       <!-- product -->
-      <div id="single-product">
+      <div id="single-product" class="bg-white rounded-lg shadow-md mt-4 p-4">
         <!-- top side -->
-        <div id="product-image" class="w-full flex justify-center py-5 bg-[#ebeeef]"></div>
+        <div id="product-image" class="w-full flex justify-center py-5 bg-[#ebeeef] rounded-t-lg"></div>
 
         <!-- bottom side -->
-        <div class="bg-white">
-          <div class="px-5 py-2 flex justify-between items-center">
-            <span id="product-name" class="font-semibold font-[inter] text-3xl"></span>
+        <div class="px-5 py-4">
+          <div class="flex justify-between items-center">
+            <span id="product-name" class="font-semibold text-2xl w-[260px]"></span>
             <span><img src="../assets/logos/heart.png" alt="" /></span>
           </div>
-          <div class="py-2 px-5 flex gap-2 items-center text-xs">
-            <span class="bg-[#ebebec] p-1 rounded-md text-[10px]"
-              >5,371 sold</span
-            >
+          <div class="py-2 flex gap-2 items-center text-xs">
+            <span class="bg-[#ebebec] p-1 rounded-md text-[10px]">5,371 sold</span>
             <img class="h-4" src="../assets/svgs/star-logo.svg" alt="" />
             <span>4.3 (5,389 reviews)</span>
           </div>
           <div class="flex justify-center">
-            <div class="w-[390px] border-t py-2 mt-1"></div>
+            <div class="w-full border-t py-2 mt-1"></div>
           </div>
-          <div class="px-5 flex flex-col gap-2">
-            <span class="font-[inter] font-semibold">Description</span>
-            <p class="font-[inter] text-[#6b6b6c]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur, a.
+          <div class="flex flex-col gap-2">
+            <span class="font-semibold">Description</span>
+            <p class="text-[#6b6b6c]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, a.
               <button class="font-semibold text-black">View More...</button>
             </p>
           </div>
-          <div class="px-5 flex gap-32 mt-3">
+          <div class="flex gap-10 mt-3">
             <!-- size -->
             <div class="flex flex-col gap-2">
-              <div class="font-semibold font-[inter]">Size</div>
+              <div class="font-semibold">Size</div>
               <!-- sizes box -->
               <div id="sizes-box" class="flex gap-3"></div>
             </div>
             <!-- colors -->
-            <div class="flex flex-col gap-2 justify-center">
-              <div class="font-semibold font-[inter]">Color</div>
-
+            <div class="flex flex-col gap-2">
+              <div class="font-semibold">Color</div>
               <!-- colors container -->
               <div class="flex gap-2 w-[140px] overflow-x-auto" id="colors-box"></div>
             </div>
-            
           </div>
-          <div
-            class="px-5 py-4 font-[inter] font-semibold flex items-center gap-5"
-          >
+          <div class="flex items-center gap-5 py-4">
             <span>Quantity</span>
-            <div
-              class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between items-center"
-            >
+            <div class="bg-[#f3f3f3] p-1 w-24 rounded-3xl flex justify-between items-center">
               <span id="minus-btn" class="px-2">-</span>
               <span id="product-count" class="p-1">0</span>
               <span id="plus-btn" class="px-2">+</span>
@@ -79,31 +70,25 @@
           </div>
 
           <!-- warning of empty field -->
-           <div id="warning-text" class="py-1 font-semibold font-[inter] text-red-500 flex justify-center hidden">
+          <div id="warning-text" class="py-1 font-semibold text-red-500 flex justify-center hidden">
             <span>Please enter Size, Color and Quantity!</span>
-           </div>
+          </div>
           
           <div class="flex justify-center">
-            <div class="w-[390px] border-t py-2 mt-1"></div>
+            <div class="w-full border-t py-2 mt-1"></div>
           </div>
-          <div class="px-5 flex gap-10 py-4">
+          <div class="flex justify-between items-center py-4">
             <div>
               <span>Total Price</span>
-              <span id="price-bar" class="font-[inter] font-semibold"></span>
+              <span id="price-bar" class="font-semibold"></span>
             </div>
-            <div
-              class="bg-black text-white w-full py-2 flex justify-center items-center rounded-3xl gap-4"
-            >
-              <span
-                ><img class="h-4" src="../assets/svgs/lock.svg" alt=""
-              /></span>
-              <button id="add-to-cart-btn" class="font-[inter] font-bold">Add to Cart</button>
+            <div class="bg-black text-white w-full py-2 flex justify-center items-center rounded-3xl gap-4">
+              <img class="h-4" src="../assets/svgs/lock.svg" alt="" />
+              <button id="add-to-cart-btn" class="font-bold">Add to Cart</button>
             </div>
           </div>
         </div>
       </div>
-
-     
     </div>
 
     <script src="./single-product.js"></script>

@@ -7,164 +7,84 @@
     <link rel="stylesheet" href="./home.css" />
     <title>Home</title>
   </head>
-  <body>
+  <body class="bg-[#fafafa] font-[inter]">
     <!-- container  -->
-    <div class="flex flex-col gap-2 w-[428px] m-auto mt-5">
+    <div class="flex flex-col gap-2 w-full max-w-[428px] mx-auto mt-5 p-4 bg-white rounded-lg shadow-md">
       <!-- profile  -->
       <div class="navbar h-[80px] flex justify-between items-center">
-        <div class="pl-[24px] w-[198px] flex gap-[16px] items-center">
-          <span
-            ><img class="rounded-full" src="../assets/logos/profile.png" alt=""
-          /></span>
-          <div class="flex flex-col gap-[10px]">
-            <span
-              class="text-[#757475] text-[16px] font-[inter] font-medium w-[120px] h-[19px]"
-              >Good morning👋</span
-            >
-            <span class="font-[inter] text-[16px] font-bold text-[#152536]"
-              >Saeed Abdilar</span
-            >
+        <div class="flex gap-4 items-center">
+          <img class="rounded-full h-12 w-12" src="../assets/logos/profile.png" alt="Profile Picture" />
+          <div class="flex flex-col gap-1">
+            <span class="text-[#757475] text-[16px] font-medium">Good morning👋</span>
+            <span class="text-[16px] font-bold text-[#152536]">Ahmadreza Mohammadi</span>
           </div>
         </div>
-        <div class="pr-[24px]">
-          <div class="w-[64px] flex gap-[16px]">
-            <span><img src="../assets/logos/alert-icon.png" alt="" /></span>
-            <span><img src="../assets/logos/heart.png" alt="" /></span>
-          </div>
+        <div class="flex gap-4">
+          <img class="h-6 w-6" src="../assets/logos/alert-icon.png" alt="Alert" />
+          <img class="h-6 w-6" src="../assets/logos/heart.png" alt="Heart" />
         </div>
       </div>
 
       <!-- search input  -->
-      <div
-        class="w-[380px] m-auto mb-[] px-[24px] py-[8px] bg-[#fafafa] rounded flex gap-1"
-      >
-        <img class="h-6" src="../assets/svgs/search-svgrepo-com.svg" alt="" />
-        <input
-          class="w-full bg-[#fafafa]"
-          type="text"
-          name=""
-          id=""
-          placeholder="Search"
-        />
+      <div class="w-full mb-4 px-4 py-2 bg-[#fafafa] rounded flex gap-2 items-center shadow-sm ">
+        <img class="h-6" src="../assets/svgs/search-svgrepo-com.svg" alt="Search Icon" />
+        <input class="w-full bg-[#fafafa] outline-none" type="text" placeholder="Search" />
       </div>
 
       <!-- brands -->
-      <div class="w-[428px] flex justify-center py-2">
-        <div
-          id="brands-container"
-          class="flex flex-wrap w-[390px] gap-x-10 gap-y-5"
-        >
-          
-        </div>
+      <div class="flex justify-center py-2">
+        <div id="brands-container" class="flex flex-wrap w-full gap-x-10 gap-y-5 justify-center"></div>
       </div>
 
       <!-- filters -->
-      <div
-        class="filters h-[24px] w-[380px] m-auto mt-[28px] flex justify-between items-center"
-      >
-        <span class="font-[inter] text-[20px] font-[600]">Most Popular</span>
-        <span class="font-[inter] text-[16px] font-[600]">See All</span>
+      <div class="filters h-[24px] w-full mt-8 flex justify-between items-center">
+        <span class="text-[20px] font-semibold">Most Popular</span>
+        <span class="text-[16px] font-semibold text-gray-500">See All</span>
       </div>
 
-      <div class=" w-full mt-[20px]">
-
-        <div
-          class="flex gap-2 overflow-x-auto scrollbar-hide my-2 py-3 cursor-pointer mx-4"
-        >
-          <button
-            class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
-          >
-            All
-          </button>
-          <button
-            class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
-          >
-            Nike
-          </button>
-          <button
-            class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
-          >
-            Adidas
-          </button>
-          <button
-            class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
-          >
-            Puma
-          </button>
-          <button
-            class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
-          >
-            Asics
-          </button>
-          <button
-            class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
-          >
-            Rebok
-          </button>
-          <button
-            class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
-          >
-            New Balance
-          </button>
+      <div class="w-full mt-4">
+        <div class="flex gap-2 overflow-x-auto scrollbar-hide py-3 cursor-pointer draggable">
+          <button class="border border-black flex items-center px-4 py-1 rounded-2xl hover:bg-gray-500 hover:text-white whitespace-nowrap">All</button>
+          <button class="border border-black flex items-center px-4 py-1 rounded-2xl hover:bg-gray-500 hover:text-white whitespace-nowrap">Nike</button>
+          <button class="border border-black flex items-center px-4 py-1 rounded-2xl hover:bg-gray-500 hover:text-white whitespace-nowrap">Adidas</button>
+          <button class="border border-black flex items-center px-4 py-1 rounded-2xl hover:bg-gray-500 hover:text-white whitespace-nowrap">Puma</button>
+          <button class="border border-black flex items-center px-4 py-1 rounded-2xl hover:bg-gray-500 hover:text-white whitespace-nowrap">Asics</button>
+          <button class="border border-black flex items-center px-4 py-1 rounded-2xl hover:bg-gray-500 hover:text-white whitespace-nowrap">Reebok</button>
+          <button class="border border-black flex items-center px-4 py-1 rounded-2xl hover:bg-gray-500 hover:text-white whitespace-nowrap">New Balance</button>
         </div>
-        
       </div>
 
       <!-- products list -->
-      <div
-        id="products-list"
-        class="products-items mt-[24px] w-[400px] flex m-auto flex-wrap gap-x-8 gap-y-[24px]"
-      >
-        
-      </div>
-
-      <!-- fixed menu -->
-      <div
-        class="menu-bar w-[428px] h-[66px] bg-white m-auto flex justify-evenly items-center fixed bottom-0"
-      >
-        <div class="flex flex-col items-center">
-          <img
-            class="w-[24px] h-[24px]"
-            src="../assets/logos/home-logo.png"
-            alt=""
-          />
-          <span class="text-[10px]">Home</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img
-            class="w-[24px] h-[24px]"
-            src="../assets/logos/cart.png"
-            alt=""
-          />
-          <span class="text-[10px]">Cart</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img
-            class="w-[24px] h-[24px]"
-            src="../assets/logos/orders.png"
-            alt=""
-          />
-          <span class="text-[10px]">Orders</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img
-            class="w-[24px] h-[24px]"
-            src="../assets/logos/wallet.png"
-            alt=""
-          />
-          <span class="text-[10px]">Wallet</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <img
-            class="w-[24px] h-[24px]"
-            src="../assets/logos/profile-logo.png"
-            alt=""
-          />
-          <span class="text-[10px]">Profile</span>
-        </div>
-      </div>
+      <div id="products-list" class="mt-6 w-full flex flex-wrap gap-6 justify-center"></div>
     </div>
 
+    <!-- fixed menu -->
+   <div class="flex justify-center">
+    <div class="menu-bar w-full max-w-[428px] h-16 bg-white mx-auto flex justify-center items-center fixed bottom-0 shadow-md">
+      <a href="../Home/home.html" class="flex flex-col items-center text-gray-700 mx-4">
+        <img class="w-6 h-6" src="../assets/svgs/menu-svgs/home-black.svg" alt="Home" />
+        <span class="text-xs">Home</span>
+      </a>
+      <a href="../Cart/cart.html" class="flex flex-col items-center text-gray-700 mx-4">
+        <img class="w-6 h-6" src="../assets/svgs/menu-svgs/cart-white.svg" alt="Cart" />
+        <span class="text-xs">Cart</span>
+      </a>
+      <div class="flex flex-col items-center text-gray-700 mx-4">
+        <img class="w-6 h-6" src="../assets/svgs/menu-svgs/orders-white.svg" alt="Orders" />
+        <span class="text-xs">Orders</span>
+      </div>
+      <div class="flex flex-col items-center text-gray-700 mx-4">
+        <img class="w-6 h-6" src="../assets/svgs/menu-svgs/wallet-white.svg" alt="Wallet" />
+        <span class="text-xs">Wallet</span>
+      </div>
+      <div class="flex flex-col items-center text-gray-700 mx-4">
+        <img class="w-6 h-6" src="../assets/svgs/menu-svgs/profile-white.svg" alt="Profile" />
+        <span class="text-xs">Profile</span>
+      </div>
+      </div>
+   </div>
+
     <script src="./home.js"></script>
+    <script src="./slider.js"></script>
   </body>
 </html>

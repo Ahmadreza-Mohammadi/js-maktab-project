@@ -38,8 +38,7 @@ const BASE_URL = "http://api.alikooshesh.ir:3000";
 const API_KEY =
   "ahmadreza-mohammadiDf4FntTt7eDYpjB1y6JrubLGirgncMnWPauJW8NTAyK7FvVX46U3oFl1eQUJCxKcs1KnEsp2nYuX90qx3G2DgUxXBkBSIqbu1gqNVGpKjB3DH";
 const ACCESS_TOKEN =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjMxNzE3OSwiZXhwIjoxNzM2NDg5OTc5fQ.diochWTWo5pOCjvn0Exirouka-2VXh5bopw041_oXsE";
-
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjQwNzQ0OSwiZXhwIjoxNzM2NTgwMjQ5fQ.eg_95HnQUzqfhW8LaXbe1m8o-mKIGdlkRXxupszuW9U"
 function renderHomeBrands() {
   brands.forEach((brand) => {
     brandsContainer.innerHTML += `
@@ -58,7 +57,7 @@ function renderHomeBrands() {
                 alt=""
               />
             </div>
-            <span class="brands">${brand.name}</span>
+            <span class="brands whitespace-nowrap overflow-hidden">${brand.name}</span>
           </div>
         </a>
                           

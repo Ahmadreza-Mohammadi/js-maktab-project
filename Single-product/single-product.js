@@ -2,8 +2,7 @@ const BASE_URL = "http://api.alikooshesh.ir:3000";
 const API_KEY =
   "ahmadreza-mohammadiDf4FntTt7eDYpjB1y6JrubLGirgncMnWPauJW8NTAyK7FvVX46U3oFl1eQUJCxKcs1KnEsp2nYuX90qx3G2DgUxXBkBSIqbu1gqNVGpKjB3DH";
 const ACCESS_TOKEN =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjMxNzE3OSwiZXhwIjoxNzM2NDg5OTc5fQ.diochWTWo5pOCjvn0Exirouka-2VXh5bopw041_oXsE";
-
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3N2E1MTcyOWZkODZmZmFjMzE4OTdmZiIsImlhdCI6MTczNjQwNzQ0OSwiZXhwIjoxNzM2NTgwMjQ5fQ.eg_95HnQUzqfhW8LaXbe1m8o-mKIGdlkRXxupszuW9U";
 const singleProduct = document.getElementById("single-product");
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
@@ -24,7 +23,17 @@ let cart = {
   selectedSizeValue: null,
   selectedColorValue: null,
   count: count,
+  name: null,
+  imageURL: null,
+  totalPrice: null,
+  basePrice: null,
 };
+
+function updatePrice() {
+  const totalPrice = cart.basePrice * cart.count;
+  cart.totalPrice = totalPrice;
+  priceBar.innerHTML = `$${totalPrice}.00`;
+}
 
 async function renderSingleProductData() {
   const response = await fetch(
@@ -38,15 +47,16 @@ async function renderSingleProductData() {
   );
   const resToJson = await response.json();
   const result = await resToJson.records[0];
-  cart.id = await result.id;
+  cart.id = result.id;
 
   productImage.innerHTML = `
   <img src="${result.imageURL[0]}" alt="shoe" />
   `;
-
+  cart.imageURL = result.imageURL[0];
+  cart.name = result.name;
   productName.innerHTML = result.name;
 
-  const sizes = await result.sizes;
+  const sizes = result.sizes;
   sizesBox.innerHTML = "";
   sizes.forEach((size) => {
     sizesBox.innerHTML += `
@@ -56,7 +66,7 @@ async function renderSingleProductData() {
     `;
   });
 
-  const colors = await result.colors;
+  const colors = result.colors;
   colorsBox.innerHTML = "";
   colors.forEach((color) => {
     colorsBox.innerHTML += `
@@ -65,18 +75,20 @@ async function renderSingleProductData() {
     `;
   });
 
-  const itemsLeft = await result.items_left;
+  const itemsLeft = result.items_left;
 
-  priceBar.innerHTML = `$${result.price}.00`;
+  cart.basePrice = result.price; // ذخیره قیمت اولیه محصول
   productCount.innerHTML = count;
+  updatePrice();
 
   // plus the count
   plusBtn.addEventListener("click", () => {
     if (count < itemsLeft) {
       count++;
       productCount.innerHTML = count;
-      cart.count = count; // Update the cart count
+      cart.count = count;
       console.log(cart);
+      updatePrice();
     }
   });
 
@@ -85,8 +97,9 @@ async function renderSingleProductData() {
     if (count > 1) {
       count--;
       productCount.innerHTML = count;
-      cart.count = count; // Update the cart count
+      cart.count = count;
       console.log(cart);
+      updatePrice();
     }
   });
 
@@ -126,6 +139,7 @@ async function renderSingleProductData() {
 
 renderSingleProductData();
 
+// posting cart to api
 async function postCart(cart) {
   const resData = await fetch(`${BASE_URL}/api/records/cart`, {
     method: "POST",
@@ -134,15 +148,14 @@ async function postCart(cart) {
       Authorization: `Bearer ${ACCESS_TOKEN}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(cart), // Set the body of the request
+    body: JSON.stringify(cart),
   });
-  const result = await resData.json(); // Call the json() method correctly
-  if(result){
+  const result = await resData.json(); //
+  if (result) {
     window.location.href = "../Home/home.html";
   }
 }
 
-// Call the function with the cart object
 addToCartBtn.addEventListener("click", () => {
   // Check if all necessary values are selected
   if (!cart.selectedSizeValue || !cart.selectedColorValue || !cart.count) {

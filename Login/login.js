@@ -5,7 +5,7 @@ const signInParentBtn = document.getElementById("sign-in-btn");
 
 const BASE_URL = "http://api.alikooshesh.ir:3000";
 const API_KEY =
-  "api-new-maktabIPcJWrxO3VF72hgLGHmPxV7pJpnrLzoaS2WSj2YzWcobuYdGrtUAb2QRl5V36VtqUToNlJk3Lf3E4vXsDoYvezYljJpxPGw3DtEyQv5XsyQkpfUlrX";
+  "ahmadreza-mohammadiDf4FntTt7eDYpjB1y6JrubLGirgncMnWPauJW8NTAyK7FvVX46U3oFl1eQUJCxKcs1KnEsp2nYuX90qx3G2DgUxXBkBSIqbu1gqNVGpKjB3DH";
 
 function loginHandler() {
   const email = emailInput.value;
@@ -39,8 +39,6 @@ function loginHandler() {
     });
 }
 
-
-
 function updateButtonState() {
   if (emailInput.value === "" && passwordInput.value === "") {
     signInParentBtn.style.backgroundColor = "#6e7174";
@@ -51,4 +49,3 @@ function updateButtonState() {
 
 emailInput.addEventListener("input", updateButtonState);
 passwordInput.addEventListener("input", updateButtonState);
-

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Wishlist</title>
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none; /
+      }
+      .draggable {
+        cursor: grab;
+      }
+      .draggable:active {
+        cursor: grabbing;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="w-[428px] m-auto flex justify-between items-center">
+      <!-- top bar -->
+      <div class="px-5 py-3 flex gap-2">
+        <img
+          class="h-6"
+          src="../assets/svgs/left-arrow-svgrepo-com.svg"
+          alt=""
+        />
+        <span>My Wishlist</span>
+      </div>
+      <div>
+        <img
+          class="h-6 px-5"
+          src="../assets/logos/manifying-glass.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- buttons  -->
+    <div class="w-[428px] m-auto">
+      <div
+        class="flex gap-2 overflow-x-auto scrollbar-hide my-2 py-3 cursor-pointer mx-4 draggable"
+      >
+        <button
+          class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
+        >
+          All
+        </button>
+        <button
+          class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
+        >
+          Nike
+        </button>
+        <button
+          class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
+        >
+          Adidas
+        </button>
+        <button
+          class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
+        >
+          Puma
+        </button>
+        <button
+          class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
+        >
+          Asics
+        </button>
+        <button
+          class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
+        >
+          Reebok
+        </button>
+        <button
+          class="border border-black flex items-center w-full px-4 py-4 rounded-2xl h-8 hover:bg-gray-500 hover:text-white whitespace-nowrap"
+        >
+          New Balance
+        </button>
+      </div>
+    </div>
+
+    <script src="./slider.js"></script>
+  </body>
+</html>

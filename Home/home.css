@@ -13,3 +13,16 @@
   text-overflow: ellipsis;
   width: 200px;
 }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* برای مرورگر اینترنت اکسپلورر و اج */
+  scrollbar-width: none; /* برای فایرفاکس */
+}
+.draggable {
+  cursor: grab;
+}
+.draggable:active {
+  cursor: grabbing; }
